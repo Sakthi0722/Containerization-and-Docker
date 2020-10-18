@@ -76,6 +76,45 @@
         </div>
     </div>
 </header>
+<div class="container">
+    <h1 class="text-center">A tutorial on how to setup a web server on your local computer using docker</h1>
+    <hr>
+    <p class="text-justify">In our example, we are going to use the Apache Web Server on Ubuntu to build our image. Let’s follow the steps given below, to build our web server Docker file.</p>
+    <p class="text-justify">Step 1 − The first step is to build our Docker File. Let’s use vim and create a Docker File with the following information.</p>
+    <img src= "Image/im6.png" class="d-block w-100" alt="...">
+    <p class="text-justify">(Image Source: https://www.tutorialspoint.com/)
+    <p class="text-justify">The following points need to be noted about the above statements −</p>
+    <ul>
+        <li>We are first creating our image to be from the Ubuntu base image.</li>
+        <li>Next, we are going to use the RUN command to update all the packages on the Ubuntu system.</li>
+        <li>Next, we use the RUN command to install apache2 on our image.</li>
+        <li>Next, we use the RUN command to install the necessary utility apache2 packages on our image.</li>
+        <li>Next, we use the RUN command to clean any unnecessary files from the system.</li>
+        <li>The EXPOSE command is used to expose port 80 of Apache in the container to the Docker host.</li>
+        <li>Finally, the CMD command is used to run apache2 in the background.</li>
+    </ul>
+    <img src= "https://www.tutorialspoint.com/docker/images/apache2.jpg" class="d-block w-100" alt="...">
+    <p class="text-justify">(Image Source: https://www.tutorialspoint.com/)</p>
+    <p class="text-justify">Step 2 − Run the Docker build command to build the Docker file. It can be done using the following command:</p>
+    <img src= "Image/im7.png" class="d-block w-100" alt="...">
+    <p class="text-justify">(Image Source: https://www.tutorialspoint.com/)</p>
+    <p class="text-justify">We are tagging our image as mywebserver. Once the image is built, you will get a successful message that the file has been built.</p>
+    <img src= "https://www.tutorialspoint.com/docker/images/my_web_servers.jpg" class="d-block w-100" alt="...">
+    <p class="text-justify">(Image Source: https://www.tutorialspoint.com/)
+    <p class="text-justify">Step 3 − Now that the web server file has been built, it’s now time to create a container from the image. We can do this with the Docker run command.</p>
+    <img src= "Image/im8.png" class="d-block w-100" alt="...">
+    <p class="text-justify">(Image Source: https://www.tutorialspoint.com/)</p>
+    <img src= "https://www.tutorialspoint.com/docker/images/docker_run_command.jpg" class="d-block w-100" alt="...">
+    <p class="text-justify">(Image Source: https://www.tutorialspoint.com/)</p>
+    <p class="text-justify">The following points need to be noted about the above command −</p>
+    <ul>
+    <li>The port number exposed by the container is 80. Hence with the –p command, we are mapping the same port number to the 80 port number on our localhost.</li>
+    <li>The –d option is used to run the container in detached mode. This is so that the container can run in the background.</li>
+    <li>If you go to port 80 of the Docker host in your web browser, you will now see that Apache is up and running.</li>
+    </ul>
+    <img src= "https://www.tutorialspoint.com/docker/images/apache_is_running.jpg" class="d-block w-100" alt="...">
+    <p class="text-justify">(Image Source: https://www.tutorialspoint.com/)</p>
+</div>
 <br><br>
 <footer class="site-footer">
     <div class="container">
