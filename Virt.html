@@ -12,10 +12,10 @@
 
     <title>Docker, Linux and Containerization</title>
 </head>
-<body>
-<header class=".bg-dark">
+<body style="background-color:lightblue;">
+<header class=".bg-light">
     <!-- Content here -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,7 +55,7 @@
 
                 <div class="row d-flex justify-content-center text-center">
 
-                    <div class="col-md-10">
+                    <div class="col-md-100">
                         <br>
                         <br>
                         <br>
@@ -81,13 +81,14 @@
     <h1 class="text-center">What is Virtualization?</h1>
     <hr><br>
     <img src="https://cdn.ttgtmedia.com/rms/onlineImages/server_virtualization-traditional_virtual_architecture_desktop.jpg" class="card-img-top" alt="...">
-    <p><i>Image reference https://whatis.techtarget.com/</i></p>
+    <p><i>Image Source: https://whatis.techtarget.com/</i></p>
     <h4 class="text-justify">Virtualization is the process of running a virtual instance of a computer system in a layer abstracted from the actual hardware. Most commonly, it refers to running multiple operating systems on a computer system simultaneously. To the applications running on top of the virtualized machine, it can appear as if they are on their own dedicated machine, where the operating system, libraries, and other programs are unique to the guest virtualized system and unconnected to the host operating system which sits below it.</h4>
 
     <br>
     <h1 class="text-center">What is a Hypervisor?</h1>
     <hr>
     <img src="https://ix-cdn.b2e5.com/images/246/246_06262190a96249bcad163cd45acf577e_1543814755.jpeg" class="card-img-top" alt="...">
+    <p><i>Image Source: https://ix-cdn.b2e5.com/</i></p>
     <br><h4 class="text-justify">A hypervisor is a program for creating and running virtual machines. Hypervisors have traditionally been split into two classes: type one, or "bare metal" hypervisors that run guest virtual machines directly on a system's hardware, essentially behaving as an operating system. Type two, or "hosted" hypervisors behave more like traditional applications that can be started and stopped like a normal program. In modern systems, this split is less prevalent, particularly with systems like KVM. KVM, short for kernel-based virtual machine, is a part of the Linux kernel that can run virtual machines directly, although you can still use a system running KVM virtual machines as a normal computer itself.</h4>
 
     <br>
@@ -139,19 +140,19 @@
     <p><ul class="3">
         <h5><li><b>Data Virtualization</b></li></h5>
         <img src="https://www.redhat.com/cms/managed-files/data%20virtualization.png" class="card-img-top" alt="...">
-        <br><p class="text-justify"><i>Image reference: https://www.redhat.com/</i></p>
+        <br><p class="text-justify"><i>Image Source: https://www.redhat.com/</i></p>
         <br><p class="text-justify">Data that’s spread all over can be consolidated into a single source. Data virtualization allows companies to treat data as a dynamic supply—providing processing capabilities that can bring together data from multiple sources, easily accommodate new data sources, and transform data according to user needs. Data virtualization tools sit in front of multiple data sources and allows them to be treated as single source, delivering the needed data—in the required form—at the right time to any application or user.</p>
     <br><h5><li><b>Desktop Virtualization</b></li></h5>
     <img src="https://www.redhat.com/cms/managed-files/desktop%20virtualization_0.png" class="card-img-top" alt="...">
-    <br><p class="text-justify"><i>Image reference: https://www.redhat.com/</i></p>
+    <br><p class="text-justify"><i>Image Source: https://www.redhat.com/</i></p>
     <br><p class="text-justify">Easily confused with operating system virtualization—which allows you to deploy multiple operating systems on a single machine—desktop virtualization allows a central administrator (or automated administration tool) to deploy simulated desktop environments to hundreds of physical machines at once. Unlike traditional desktop environments that are physically installed, configured, and updated on each machine, desktop virtualization allows admins to perform mass configurations, updates, and security checks on all virtual desktops.</p>
     <br><h5><li><b>Server Virtualization</b></li></h5>
     <img src="https://www.redhat.com/cms/managed-files/server-virtualization-layout-530x287_0.png" class="card-img-top" alt="...">
-    <br><p class="text-justify"><i>Image reference: https://www.redhat.com/</i></p>
+    <br><p class="text-justify"><i>Image Source: https://www.redhat.com/</i></p>
     <br><p class="text-justify">Servers are computers designed to process a high volume of specific tasks really well so other computers—like laptops and desktops—can do a variety of other tasks. Virtualizing a server lets it to do more of those specific functions and involves partitioning it so that the components can be used to serve multiple functions.</p>
     <br><h5><li><b>Operating System Virtualization</b></li></h5>
     <img src="https://www.redhat.com/cms/managed-files/operating-system-virtualization-400x321.png" class="card-img-top" alt="...">
-    <br><p class="text-justify"><i>Image reference: https://www.redhat.com/</i></p>
+    <br><p class="text-justify"><i>Image Source: https://www.redhat.com/</i></p>
     <br><p class="text-justify">Operating system virtualization happens at the kernel—the central task managers of operating systems. It’s a useful way to run Linux and Windows environments side-by-side. Enterprises can also push virtual operating systems to computers, which:
 <ul class="4">
     <li>Reduces bulk hardware costs, since the computers don’t require such high out-of-the-box capabilities</li>
@@ -160,14 +161,14 @@
 
     <br><h5><li><b>Network Functions Virtualization</b></li></h5>
     <img src="https://www.redhat.com/cms/managed-files/network-function-virtualization-400x337_0.png" class="card-img-top" alt="...">
-    <br><p class="text-justify"><i>Image reference: https://www.redhat.com/</i></p>
+    <br><p class="text-justify"><i>Image Source: https://www.redhat.com/</i></p>
     <br><p class="text-justify">Network functions virtualization (NFV) separates a network's key functions (like directory services, file sharing, and IP configuration) so they can be distributed among environments. Once software functions are independent of the physical machines they once lived on, specific functions can be packaged together into a new network and assigned to an environment. Virtualizing networks reduces the number of physical components—like switches, routers, servers, cables, and hubs—that are needed to create multiple, independent networks, and it’s particularly popular in the telecommunications industry.</p>
 </ul>
 
 </div>
     <br><br>
 <!-- Site footer -->
-<footer class="site-footer">
+<footer class="site-footer bg-light">
     <div class="container">
         <div class="col-xs-50 col-md-500">
             <h6>Quick Links</h6>

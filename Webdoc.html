@@ -10,12 +10,12 @@
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="css/content.css" rel="stylesheet">
 
-    <title>Containerization and Docker</title>
+    <title>Docker, Linux and Containerization</title>
 </head>
-<body>
-<header class=".bg-dark">
+<body style="background-color:lightblue;">
+<header class=".bg-light">
     <!-- Content here -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Containerization and Docker
+                        Docker, Linux and Containerization
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="Virt.html">Virtualization</a>
@@ -62,7 +62,7 @@
                         <br>
                         <br>
                         <!-- Heading -->
-                        <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">Web Server using Docker</h2>
+                        <h2 class="display-4 font-weight-bold white-text pt-2 mb-1">Web Server using Docker</h2>
 
                         <!-- Divider -->
                         <hr class="hr-light">
@@ -77,13 +77,13 @@
     </div>
 </header>
 <div class="container">
-    <h1 class="text-center">A tutorial on how to setup a web server on your local computer using docker</h1>
+    <br><h1 class="text-center">How to setup a Web server on your local computer using Docker</h1>
     <hr>
     <p class="text-justify">In our example, we are going to use the Apache Web Server on Ubuntu to build our image. Let’s follow the steps given below, to build our web server Docker file.</p>
-    <p class="text-justify"><b>Step 1</b> − The first step is to build our Docker File. Let’s use vim and create a Docker File with the following information.</p>
+    <p class="text-justify"><b>Step 1: The first step is to build our Docker File. Let’s use vim and create a Docker File with the following information.</b></p>
     <img src= "Image/im6.png" class="d-block w-100" alt="...">
-    <p class="text-justify">(Image Source: https://www.tutorialspoint.com/)
-    <p class="text-justify">The following points need to be noted about the above statements −</p>
+    <p class="text-justify"><i>Image Source: https://www.tutorialspoint.com/</i></p>
+    <p class="text-justify">The following points need to be noted about the above statements:</p>
     <ul>
         <li>We are first creating our image to be from the Ubuntu base image.</li>
         <li>Next, we are going to use the RUN command to update all the packages on the Ubuntu system.</li>
@@ -94,18 +94,18 @@
         <li>Finally, the CMD command is used to run apache2 in the background.</li>
     </ul>
     <img src= "https://www.tutorialspoint.com/docker/images/apache2.jpg" class="d-block w-100" alt="...">
-    <p class="text-justify">(Image Source: https://www.tutorialspoint.com/)</p>
-    <p class="text-justify"><b>Step 2</b> − Run the Docker build command to build the Docker file. It can be done using the following command:</p>
+    <p class="text-justify"><i>Image Source: https://www.tutorialspoint.com/</i></p>
+    <p class="text-justify"><b>Step 2:</b> Run the Docker build command to build the Docker file. It can be done using the following command:</p>
     <img src= "Image/im7.png" class="d-block w-100" alt="...">
-    <p class="text-justify">(Image Source: https://www.tutorialspoint.com/)</p>
+    <p class="text-justify"><i>Image Source: https://www.tutorialspoint.com/</i></p>
     <p class="text-justify">We are tagging our image as mywebserver. Once the image is built, you will get a successful message that the file has been built.</p>
     <img src= "https://www.tutorialspoint.com/docker/images/my_web_servers.jpg" class="d-block w-100" alt="...">
-    <p class="text-justify">(Image Source: https://www.tutorialspoint.com/)
-    <p class="text-justify"><b>Step 3</b> − Now that the web server file has been built, it’s now time to create a container from the image. We can do this with the Docker run command.</p>
+    <p class="text-justify"><i>Image Source: https://www.tutorialspoint.com/</i></p>
+    <p class="text-justify"><b>Step 3:</b> Now that the web server file has been built, it’s now time to create a container from the image. We can do this with the Docker run command.</p>
     <img src= "Image/im8.png" class="d-block w-100" alt="...">
-    <p class="text-justify">(Image Source: https://www.tutorialspoint.com/)</p>
+    <p class="text-justify"><i>Image Source: https://www.tutorialspoint.com/</i></p>
     <img src= "https://www.tutorialspoint.com/docker/images/docker_run_command.jpg" class="d-block w-100" alt="...">
-    <p class="text-justify">(Image Source: https://www.tutorialspoint.com/)</p>
+    <p class="text-justify"><i>Image Source: https://www.tutorialspoint.com/</i></p>
     <p class="text-justify">The following points need to be noted about the above command −</p>
     <ul>
     <li>The port number exposed by the container is 80. Hence with the –p command, we are mapping the same port number to the 80 port number on our localhost.</li>
@@ -113,22 +113,23 @@
     <li>If you go to port 80 of the Docker host in your web browser, you will now see that Apache is up and running.</li>
     </ul>
     <img src= "https://www.tutorialspoint.com/docker/images/apache_is_running.jpg" class="d-block w-100" alt="...">
-    <p class="text-justify">(Image Source: https://www.tutorialspoint.com/)</p>
+    <p class="text-justify"><i>Image Source: https://www.tutorialspoint.com/</i></p>
 </div>
 <br><br>
-<footer class="site-footer">
+<!-- Site footer -->
+<footer class="site-footer bg-light">
     <div class="container">
-        <div class="col-xs-12 col-md-3">
+        <div class="col-xs-50 col-md-500">
             <h6>Quick Links</h6>
-            <ul class="footer-links">
-                <li><a href= About.html>About</a></li>
-                <li><a href= Virt.html>Virtualization</a></li>
-                <li><a href= Cont.html>Containerization</a></li>
-                <li><a href= VirtvsCont.html>Virtualization vs Containerization</a></li>
-                <li><a href= Webdoc.html>Web Server using Docker</a></li>
-                <li><a href= Linux.html>Basic Linux Commands</a></li>
-                <li><a href= Pydoc.html>Docker with Pycharm</a></li>
-            </ul>
+
+            <a href= About.html>About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Virt.html>Virtualization</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Cont.html>Containerization</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= VirtvsCont.html>Virtualization v/s Containerization</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Webdoc.html>Web Server using Docker</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Linux.html>Basic Linux Commands</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Pydoc.html>Docker with PyCharm</a>
+
         </div>
     </div>
 </footer>

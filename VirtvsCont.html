@@ -10,12 +10,12 @@
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="css/content.css" rel="stylesheet">
 
-    <title>Containerization and Docker</title>
+    <title>Docker, Linux and Containerization</title>
 </head>
-<body>
-<header class=".bg-dark">
+<body style="background-color:lightblue;">
+<header class=".bg-light">
     <!-- Content here -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Home</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Containerization and Docker
+                        Docker, Linux and Containerization
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="Virt.html">Virtualization</a>
@@ -55,14 +55,12 @@
 
                 <div class="row d-flex justify-content-center text-center">
 
-                    <div class="col-md-10">
-                        <br>
-                        <br>
+                    <div class="col-md-100">
                         <br>
                         <br>
                         <br>
                         <!-- Heading -->
-                        <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">Virtualization Vs Containerization</h2>
+                        <h2 class="display-4 font-weight-bold white-text pt-2 mb-1">Virtualization<br>v/s<br>Containerization</h2>
 
                         <!-- Divider -->
                         <hr class="hr-light">
@@ -77,19 +75,106 @@
     </div>
 </header>
 <br><br>
-<footer class="site-footer">
+
+
+<div class="container">
+
+    <img src="https://lwstatic-a.akamaihd.net/kb/wp-content/uploads/2019/12/vm-vs-containers.png" class="card-img-top" alt="...">
+    <p><i>Image Source: https://www.liquidweb.com/</i></p>
+    <h4 class="text-justify">
+        <b>Containerization</b> is a lightweight alternative to full machine virtualization that involves encapsulating an application in a container with its own operating environment.
+        Containers use the same host operating system (OS) repeatedly, instead of installing an OS for each guest VM.
+        Containers also provide a way to isolate applications and provide a virtual platform for applications to run on . Two main differences exist between a container and a hypervisor system.
+        <br><br><b>A virtual machine</b> is a copy of a complete server basically it has its own OS which means the replication of binaries, drivers, or libraries between different VMs running on same server and a wastage significant server resources.
+        <br><br>To explain in brief, Virtualization enables you to run multiple operating systems on the hardware of a single physical server, while Containerization enables you to deploy multiple applications using the same operating system on a single virtual machine or server.
+        <br><br><h5 class="text-center"><b>LET US OBSERVE A  POINT-WISE DIFFERENTIATION!</b></h5>
+    </h4>
+    <div class="table-responsive">
+    <table class="table table-striped table-bordered table-hover">
+
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col"><h4>Sr. No.</h4></th>
+            <th scope="col"><h4>Key Points</h4></th>
+            <th scope="col"><h4>Virtualization</h4></th>
+            <th scope="col"><h4>Containerization</h4></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><b>1</b></td>
+            <td><b>Architecture</b></td>
+            <td><img src="https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/media/virtual-machine-diagram.svg" class="card-img-top" alt="..."><p>Image Source: https://docs.microsoft.com/</p></td>
+            <td><img src="https://docs.microsoft.com/en-us/virtualization/windowscontainers/about/media/container-diagram.svg" class="card-img-top" alt="..."><p>Image Source: https://docs.microsoft.com/</p></td>
+        </tr>
+        <tr>
+            <td><b>2</b></td>
+            <td><b>Isolation</b></td>
+            <td>Provides complete isolation from the host operating system and other VMs. This is useful when a strong security boundary is critical, such as hosting apps from competing companies on the same server or cluster</td>
+            <td>Typically provides lightweight isolation from the host and other containers, but doesn't provide as strong a security boundary as a VM</td>
+        </tr>
+        <tr>
+            <td><b>3</b></td>
+            <td><b>Operating System</b></td>
+            <td>Runs a complete operating system including the kernel, thus requiring more system resources (CPU, memory, and storage)</td>
+            <td>Runs the user mode portion of an operating system, and can be tailored to contain just the needed services for your app, using fewer system resources</td>
+        </tr>
+        <tr>
+            <td><b>4</b></td>
+            <td><b>Guest Compatibility</b></td>
+            <td>Runs just about any operating system inside the virtual machine</td>
+            <td>Runs on the same operating system version as the host</td>
+        </tr>
+        <tr>
+            <td><b>5</b></td>
+            <td><b>Deployment</b></td>
+            <td>Deploy individual VMs by using Windows Admin Center or Hyper-V Manager; deploy multiple VMs by using PowerShell or System Center Virtual Machine Manager</td>
+            <td>Deploy individual containers by using Docker via command line; deploy multiple containers by using an orchestrator</td>
+        </tr>
+        <tr>
+            <td><b>6</b></td>
+            <td><b>Persistent Storage</b></td>
+            <td>Use a virtual hard disk (VHD) for local storage for a single VM, or an SMB file share for storage shared by multiple servers</td>
+            <td>Use Disks for local storage for a single node, or SMB shares for storage shared by multiple nodes or servers</td>
+        </tr>
+        <tr>
+            <td><b>7</b></td>
+            <td><b>Load Balancing</b></td>
+            <td>Virtual machine load balancing moves running VMs to other servers in a failover cluster</td>
+            <td>Containers themselves don't move; instead an orchestrator can automatically start or stop containers on cluster nodes to manage changes in load and availability</td>
+        </tr>
+        <tr>
+            <td><b>8</b></td>
+            <td><b>Fault Tolerance</b></td>
+            <td>VMs can fail over to another server in a cluster, with the VM's operating system restarting on the new server</td>
+            <td>If a cluster node fails, any containers running on it are rapidly recreated by the orchestrator on another cluster node</td>
+        </tr>
+        <tr>
+            <td><b>9</b></td>
+            <td><b>Networking</b></td>
+            <td>Uses virtual network adapters</td>
+            <td>Uses an isolated view of a virtual network adapter, providing a little less virtualization–the host's firewall is shared with containers–while using less resources</td>
+        </tr>
+
+        </tbody>
+    </table>
+    </div>
+</div>
+
+<!-- Site footer -->
+<footer class="site-footer bg-light">
     <div class="container">
-        <div class="col-xs-12 col-md-3">
+        <div class="col-xs-50 col-md-500">
             <h6>Quick Links</h6>
-            <ul class="footer-links">
-                <li><a href= About.html>About</a></li>
-                <li><a href= Virt.html>Virtualization</a></li>
-                <li><a href= Cont.html>Containerization</a></li>
-                <li><a href= VirtvsCont.html>Virtualization vs Containerization</a></li>
-                <li><a href= Webdoc.html>Web Server using Docker</a></li>
-                <li><a href= Linux.html>Basic Linux Commands</a></li>
-                <li><a href= Pydoc.html>Docker with Pycharm</a></li>
-            </ul>
+
+            <a href= About.html>About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Virt.html>Virtualization</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Cont.html>Containerization</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= VirtvsCont.html>Virtualization v/s Containerization</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Webdoc.html>Web Server using Docker</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Linux.html>Basic Linux Commands</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Pydoc.html>Docker with PyCharm</a>
+
         </div>
     </div>
 </footer>
