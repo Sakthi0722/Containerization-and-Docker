@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0c8d46a6-0392-4045-83ac-197975148941" name="Default Changelist" comment="Task: Content edited, images added" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1j3P4lsQRmQLcovW9mp7RV8xvsm" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0c8d46a6-0392-4045-83ac-197975148941" name="Default Changelist" comment="" />
+      <created>1603029613284</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603029613284</updated>
+      <workItem from="1603029614485" duration="1257000" />
+      <workItem from="1603037752648" duration="2004000" />
+      <workItem from="1603115009482" duration="5503000" />
+      <workItem from="1603188663391" duration="18040000" />
+    </task>
+    <task id="LOCAL-00001" summary="Task: Image added">
+      <created>1603115272068</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603115272068</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Task: Content edited">
+      <created>1603190692779</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603190692779</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Task: Content edited">
+      <created>1603191343699</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603191343699</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Task: Content edited&#10;Fix: Image link fixed">
+      <created>1603194806939</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603194806939</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Task: Content edited&#10;Fix: Image link fixed">
+      <created>1603195219995</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603195219995</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Task: Content edited">
+      <created>1603195916072</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603195916072</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Task: Content edited&#10;Fix: Image link fixed">
+      <created>1603199545100</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603199545101</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Task: Content edited">
+      <created>1603200036575</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603200036575</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Task: Content edited, images added&#10;Fix: Fixed image links">
+      <created>1603207649143</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603207649143</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Task: Content edited, images added">
+      <created>1603207933078</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603207933078</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Task: Image added" />
+    <MESSAGE value="Task: Content edited&#10;Fix: Image link fixed" />
+    <MESSAGE value="Task: Content edited" />
+    <MESSAGE value="Task: Content edited, images added&#10;Fix: Fixed image links" />
+    <MESSAGE value="Task: Content edited, images added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Task: Content edited, images added" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="275" y="93" key="Vcs.Push.Dialog.v2" timestamp="1603207935109">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="275" y="93" key="Vcs.Push.Dialog.v2/0.0.1366.738@0.0.1366.738" timestamp="1603207935109" />
+    <state x="339" y="165" key="run.anything.popup" timestamp="1603117004947">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="339" y="165" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1603117004947" />
+  </component>
+</project>
