@@ -88,7 +88,7 @@
     <br>
     <h5 class="text-left">Dockerfile</h5>
     <p class="text-justify">Here follow our Dockerfile and a brief explanation</p>
-    <img src= "Image/im4.png" class="d-block w-100" alt="...">
+    <img src= "Images/im4.png" class="d-block w-100" alt="...">
     <p class="text-justify">(Image Source: https://www.analyticsvidhya.com/blog)
     <p class="text-justify">In terms a Dockerfile describes a procedure to generate a Docker image that is then used to create Docker containers. This Dockerfile builds on top of the nvidia/cuda:10.2-devel image made available in DockerHub directly by NVIDIA.</p>
     <p class="text-justify">nvidia/cuda:10.2-devel is a development image with the CUDA 10.2 toolkit already installed</p>
@@ -96,16 +96,16 @@
     <p class="text-justify">In the middle section of the Dockerfile there is a Miniconda3 installation. I decided to use Miniconda instead of just using Python because it’s my go-to platform for most of my projects. We are leveraging none of Miniconda capabilities so it is kind of overkill. Swapping out Miniconda with a vanilla installation of Python in the Dockerfile is left to the reader as an exercise.</p>
     <p class="text-justify">The last section is about the project setup, we are just installing the dependencies and copying all the files inside the image work directory and choosing the command to launch when docker run is called without a specified command.</p>
     <p class="text-justify">To build the Docker image just navigate with your shell of choice to the path containing the Dockerfile and run:</p>
-    <img src= "Image/im3.png" class="d-block w-100" alt="...">
+    <img src= "Images/im3.png" class="d-block w-100" alt="...">
     <p class="text-justify">(Image Source: https://www.analyticsvidhya.com/blog)
     <p class="text-justify">This will generate the Docker image as described by the configuration and give it the name image_name. If in the name no tag is specified latest is used as a default. To specify the tag just write it after a colon.</p>
     <p class="text-justify">I will use the name pytorch-development-box for the image in the rest of the tutorial.</p>
     <br><h5 class="text-left">requirements.txt</h5><br>
     <p class="text-justify">I’m using only Pytorch and Torchvision as the dependencies for this project. I use those packages a lot and I will use their CUDA availability method to check if everything is working. So the content of my requirements.txt is:</p>
-    <img src= "Image/im2.png" class="d-block w-100" alt="...">
+    <img src= "Images/im2.png" class="d-block w-100" alt="...">
     <p class="text-justify">(Image Source: https://www.analyticsvidhya.com/blog)<br>
     <h5 class="text-left">run.py</h5><br>
-    <img src= "Image/im1.png" class="d-block w-100" alt="...">
+    <img src= "Images/im1.png" class="d-block w-100" alt="...">
     <p class="text-justify">(Image Source: https://www.analyticsvidhya.com/blog)
     <p class="text-justify">My Python file is quite simple, I’m just checking if CUDA is available or not.</p><br>
     <h5 class="text-left">Setting up PyCharm:</h5><br>
@@ -119,13 +119,13 @@
     <img src="https://miro.medium.com/proxy/1*oklHiTRlzddT002AnjvB0w.png" class="d-block w-100" alt="...">
     <p class="text-justify">(Image Source: https://www.analyticsvidhya.com/blog)
     <p class="text-justify">After this configuration is confirmed, wait for the indexing to finish, and try running run.py.</p>
-    <img src="Image/im5.png" class="d-block w-100" alt="...">
+    <img src="Images/im5.png" class="d-block w-100" alt="...">
     <p class="text-justify">(Image Source: https://www.analyticsvidhya.com/blog)
     <p class="text-justify">At this point, we didn’t configure the Run/Debug configuration to have Docker use the GPU but we can quickly fix it.</p>
     <p class="text-justify">Open the auto-generated Run/Debug configuration and add --gpus all at the end of the Docker container settings.</p>
     <p class="text-justify">You should end up with something like this:</p>
     <img src="https://miro.medium.com/proxy/1*rnV5oSLiDBswRrtAQMAs8w.png" class="d-block w-100" alt="...">
-    <p class="text-justify">(Image Source: https://www.analyticsvidhya.com/blog)
+    <p class="text-justify"><i>Image Source: https://www.analyticsvidhya.com/blog</i></p>
     <p class="text-justify">Confirm this configuration and run it. The CUDA result is available now!</p>
 </div>
 <br><br>
