@@ -10,7 +10,7 @@
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="css/content.css" rel="stylesheet">
 
-    <title>Containerization and Docker</title>
+    <title>Docker, Linux and Containerization</title>
 </head>
 <body>
 <header class=".bg-dark">
@@ -29,7 +29,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Containerization and Docker
+                        Docker, Linux and Containerization
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="Virt.html">Virtualization</a>
@@ -62,10 +62,12 @@
                         <br>
                         <br>
                         <!-- Heading -->
-                        <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">Containerization</h2>
+                        <h2 class="display-4 text-center font-weight-bold white-text pt-5 mb-2">Containerization</h2>
 
                         <!-- Divider -->
                         <hr class="hr-light">
+
+
 
                     </div>
 
@@ -77,19 +79,65 @@
     </div>
 </header>
 <br><br>
+<div class="container">
+    <h1 class="text-center">What is Containerization?</h1>
+    <hr><br>
+    <img src="https://1.cms.s81c.com/sites/default/files/2019-03-07/1_Picture1-800x513.png" class="card-img-top" alt="...">
+    <p><i>Image reference https://www.ibm.com/</i></p>
+    <h4 class="text-justify">Containerization is defined as a form of operating system virtualization, through which applications are run in isolated user spaces called containers, all using the same shared operating system (OS). A container is essentially a fully packaged and portable computing environment:</h4>
+    <h5><ul class="1">
+        <li>Everything an application needs to run – its binaries, libraries, configuration files and dependencies – is encapsulated and isolated in its container.</li>
+        <li>The container itself is abstracted away from the host OS, with only limited access to underlying resources – much like a lightweight VM.</li>
+        <li>As a result, the containerized application can be run on various types of infrastructure—on bare metal, within VMs, and in the cloud—without needing to refactor it for each environment.</li>
+    </ul></h5>
+    <br>
+    <h1 class="text-center">How Does Containerization Actually Work?</h1>
+    <hr>
+    <h4 class="text-justify">Each container is an executable package of software, running on top of a host OS. A host(s) may support many containers (tens, hundreds or even thousands) concurrently, such as in the case of a complex microservices architecture that uses numerous containerized ADCs. This setup works because all containers run minimal, resource-isolated processes that others cannot access.<br>Think of a containerized application as the top layer of a multi-tier cake:</h4>
+    <h5><ol class="2">
+        <li>At the bottom, there is the hardware of the infrastructure in question, including its CPU(s), disk storage and network interfaces.</li>
+        <li>Above that, there is the host OS and its kernel – the latter serves as a bridge between the software of the OS and the hardware of the underlying system.</li>
+        <li>The container engine and its minimal guest OS, which are particular to the containerization technology being used, sit atop the host OS.</li>
+        <li>At the very top are the binaries and libraries (bins/libs) for each application and the apps themselves, running in their isolated user spaces (containers).</li>
+    </ol></h5>
+    <br>
+    <h1 class="text-center">What Are the Main Benefits of Containerization?</h1>
+    <hr>
+    <h4 class="text-justify">Benefits are:</h4>
+    <h5><ol class="3">
+        <li>Portability between different platforms and clouds—it’s truly write once, run anywhere.</li>
+        <li>Efficiency through using far fewer resources than VMs and delivering higher utilization of compute resources.</li>
+        <li>Agility that allows developers to integrate with their existing DevOps environment.</li>
+        <li>Higher speed in the delivery of enhancements. Containerizing monolithic applications using microservices helps development teams create functionality with its own life cycle and scaling policies.</li>
+        <li>Improved security by isolating applications from the host system and from each other.</li>
+        <li>Faster app start-up and easier scaling.</li>
+        <li>Flexibility to work on virtualized infrastructures or on bare metal servers.</li>
+        <li>Easier management since install, upgrade, and rollback processes are built into the Kubernetes platform.</li>
+        </ol></h5>
+    <br>
+    <h1 class="text-center">Why are containers important?</h1>
+    <hr>
+    <h4 class="text-justify">Containerization is one of the latest developments in the evolution of cloud computing. Many organizations, both large and small, are looking at containers as a means to improve application life-cycle management through capabilities such as continuous integration and continuous delivery. Also, certain implementations of containers conform to the principles of open source, which is appealing to organizations wary of being locked-in to a specific vendor.<br><br>Containers are also the foundation of a private cloud and, just like the early days of cloud computing, are becoming a game changer for many organizations. Private cloud becomes the platform of choice to deliver the security and control required while simultaneously enabling the consumption of multiple cloud services. This is typical of situations where organizations are running both existing application workloads and new application workloads in the cloud.<br><br>Containers help to satisfy three key use cases that reflect what enterprises require to run their applications in the cloud:</h4>
+    <h5><ol class="4">
+        <li>Modernize your existing applications.</li>
+        <li>Create new cloud native enterprise applications.</li>
+        <li>Open your data center to work with cloud services.</li>
+    </ol></h5>
+</div>
+<!-- Site footer -->
 <footer class="site-footer">
     <div class="container">
-        <div class="col-xs-12 col-md-3">
+        <div class="col-xs-50 col-md-500">
             <h6>Quick Links</h6>
-            <ul class="footer-links">
-                <li><a href= About.html>About</a></li>
-                <li><a href= Virt.html>Virtualization</a></li>
-                <li><a href= Cont.html>Containerization</a></li>
-                <li><a href= VirtvsCont.html>Virtualization vs Containerization</a></li>
-                <li><a href= Webdoc.html>Web Server using Docker</a></li>
-                <li><a href= Linux.html>Basic Linux Commands</a></li>
-                <li><a href= Pydoc.html>Docker with Pycharm</a></li>
-            </ul>
+
+            <a href= About.html>About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Virt.html>Virtualization</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Cont.html>Containerization</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            \<a href= VirtvsCont.html>Virtualization v/s Containerization</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Webdoc.html>Web Server using Docker</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Linux.html>Basic Linux Commands</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Pydoc.html>Docker with PyCharm</a>
+
         </div>
     </div>
 </footer>
