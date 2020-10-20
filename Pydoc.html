@@ -10,7 +10,7 @@
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link href="css/content.css" rel="stylesheet">
 
-    <title>Containerization and Docker</title>
+    <title>Docker, Linux and Containerization</title>
 </head>
 <body>
 <header class=".bg-dark">
@@ -29,7 +29,7 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Containerization and Docker
+                        Docker, Linux and Containerization
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="Virt.html">Virtualization</a>
@@ -62,7 +62,7 @@
                         <br>
                         <br>
                         <!-- Heading -->
-                        <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">Docker with Pycharm</h2>
+                        <h2 class="display-4 font-weight-bold white-text pt-2 mb-1">Docker with Pycharm</h2>
 
                         <!-- Divider -->
                         <hr class="hr-light">
@@ -77,7 +77,7 @@
     </div>
 </header>
 <div class="container">
-    <h1 class="text-center">A tutorial about how to connect Docker with PyCharm to write python code</h1>
+    <br><h1 class="text-center">How to connect Docker & PyCharm to write a Python code</h1><br>
     <hr>
     <p class="text-justify">For this tutorial I’m using a toy project with just 3 files:</p>
     <ul>
@@ -85,6 +85,7 @@
         <li>A <b>requirements.txt</b> file that contains the dependencies of the project.</li>
         <li>A single <b>run.py</b> file that contains some code to run. Obviously, your personal project will most likely be more complex, you may use a different method for dependency management and you might also use a docker-compose.yaml file but for the sake of getting my point through that is pointless complexity.</li>
     </ul>
+    <br>
     <h5 class="text-left">Dockerfile</h5>
     <p class="text-justify">Here follow our Dockerfile and a brief explanation</p>
     <img src= "Image/im4.png" class="d-block w-100" alt="...">
@@ -99,15 +100,15 @@
     <p class="text-justify">(Image Source: https://www.analyticsvidhya.com/blog)
     <p class="text-justify">This will generate the Docker image as described by the configuration and give it the name image_name. If in the name no tag is specified latest is used as a default. To specify the tag just write it after a colon.</p>
     <p class="text-justify">I will use the name pytorch-development-box for the image in the rest of the tutorial.</p>
-    <h5 class="text-left">requirements.txt</h5>
+    <br><h5 class="text-left">requirements.txt</h5><br>
     <p class="text-justify">I’m using only Pytorch and Torchvision as the dependencies for this project. I use those packages a lot and I will use their CUDA availability method to check if everything is working. So the content of my requirements.txt is:</p>
     <img src= "Image/im2.png" class="d-block w-100" alt="...">
-    <p class="text-justify">(Image Source: https://www.analyticsvidhya.com/blog)
-    <h5 class="text-left">run.py</h5>
+    <p class="text-justify">(Image Source: https://www.analyticsvidhya.com/blog)<br>
+    <h5 class="text-left">run.py</h5><br>
     <img src= "Image/im1.png" class="d-block w-100" alt="...">
     <p class="text-justify">(Image Source: https://www.analyticsvidhya.com/blog)
-    <p class="text-justify">My Python file is quite simple, I’m just checking if CUDA is available or not.</p>
-    <h5 class="text-left">Setting up PyCharm:</h5>
+    <p class="text-justify">My Python file is quite simple, I’m just checking if CUDA is available or not.</p><br>
+    <h5 class="text-left">Setting up PyCharm:</h5><br>
     <p class="text-justify">Using a remote Python interpreter from Docker is available only on PyCharm Professional. So, let’s see how to set it up.</p>
     <p class="text-justify">Once you’ve built your Docker image and opened your project folder in PyCharm navigate to File > Settings > Project > Python Interpreter.</p>
     <p class="text-justify">You should see something like this:</p>
@@ -128,19 +129,20 @@
     <p class="text-justify">Confirm this configuration and run it. The CUDA result is available now!</p>
 </div>
 <br><br>
+<!-- Site footer -->
 <footer class="site-footer">
     <div class="container">
-        <div class="col-xs-12 col-md-3">
+        <div class="col-xs-50 col-md-500">
             <h6>Quick Links</h6>
-            <ul class="footer-links">
-                <li><a href= About.html>About</a></li>
-                <li><a href= Virt.html>Virtualization</a></li>
-                <li><a href= Cont.html>Containerization</a></li>
-                <li><a href= VirtvsCont.html>Virtualization vs Containerization</a></li>
-                <li><a href= Webdoc.html>Web Server using Docker</a></li>
-                <li><a href= Linux.html>Basic Linux Commands</a></li>
-                <li><a href= Pydoc.html>Docker with Pycharm</a></li>
-            </ul>
+
+            <a href= About.html>About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Virt.html>Virtualization</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Cont.html>Containerization</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= VirtvsCont.html>Virtualization v/s Containerization</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Webdoc.html>Web Server using Docker</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Linux.html>Basic Linux Commands</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href= Pydoc.html>Docker with PyCharm</a>
+
         </div>
     </div>
 </footer>
